@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>syash7202|DevOps</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-hero {
+        background-image: url("./assets/bg.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-hero h-screen flex flex-col justify-between">
+      <header
+        class="text-white p-4 flex justify-between items-center bg-opacity-50 bg-black backdrop-blur"
+      >
+        <h1 class="text-3xl font-bold">Syash7202</h1>
+        <h2 class="flex space-x-4 text-xl">DevOps Engineer</h2>
+      </header>
+      <main
+        class="flex-grow flex flex-col items-center justify-center text-center text-white p-4 bg-opacity-50 bg-black backdrop-blur"
+      >
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">
+          Hi, I am a DevOps Engineer
+        </h2>
+        <p class="text-lg md:text-xl mb-8">
+          A final year master's student at Gautam Buddha University and a DevOps
+          Practitioner
+        </p>
+        <div class="space-x-4">
+          <button
+            onclick="redirectToProfile('profile1')"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            LinkedIn
+          </button>
+          <button
+            onclick="redirectToProfile('profile2')"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            GitHub
+          </button>
+          <button
+            onclick="redirectToProfile('profile3')"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Medium
+          </button>
+        </div>
+      </main>
+      <footer
+        class="text-center text-white p-4 bg-opacity-50 bg-black backdrop-blur"
+      >
+        &copy; 2024 Yash Sharma. All rights reserved.
+      </footer>
+    </div>
+    <script>
+      function redirectToProfile(profile) {
+        let url = "";
+        switch (profile) {
+          case "profile1":
+            url = "https://www.linkedin.com/in/syash7202/";
+            break;
+          case "profile2":
+            url = "https://github.com/syash7202";
+            break;
+          case "profile3":
+            url = "https://medium.com/@syash7202";
+            break;
+          default:
+            url = "#";
+        }
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>
